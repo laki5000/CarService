@@ -22,8 +22,13 @@ namespace CarService_Client
     {
         public MainWindow()
         {
-            //teszt
             InitializeComponent();
+        }
+        private void HandleButtonMainCustomer(object sender, RoutedEventArgs e)
+        {
+            Client client = new Client();
+            client.Show();
+            Close();
         }
     }
 }
