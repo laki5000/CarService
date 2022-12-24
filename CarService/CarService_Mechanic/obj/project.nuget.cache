@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "eSAnptfJDho68APMWDPW5qwl9Xx0cgPcqHt9dFAiGx9iG9VtafuFMVbRib1z43AUv/4r7TDLdDV+9NAux/+dwQ==",
+  "success": true,
+  "projectFilePath": "D:\\Suli\\Egyetem\\5.felev\\c#\\CarService\\CarService_Mechanic\\CarService_Mechanic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lakat\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
