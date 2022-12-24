@@ -12,10 +12,15 @@ namespace CarService_Common.Models
         public string Name { get; set; }
         public string Type { get; set; }
         public string PlateNumber { get; set; }
-        public DateTime ManufactureYear { get; set; }
+        public int ManufactureYear { get; set; }
         public string WorkCategory { get; set; }
         public string Description { get; set; }
         public int Seriousness { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Name} - {Type} - {PlateNumber} - {ManufactureYear} - {WorkCategory} - {Description} - {Seriousness}";
+        }
 
 
     }

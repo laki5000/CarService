@@ -12,7 +12,7 @@ namespace CarService_Client.DataProviders
 {
     class DataDataProvider
     {
-        private const string _url = "http://localhost:5058/api/data";
+        private const string _url = "http://localhost:5000/api/data";
 
         public static IEnumerable<Data> GetAllData()
         {

@@ -7,7 +7,7 @@ namespace CarService_Server.Repositories
 {
     public static class DataRepository
     {
-        private const string filename = "data.json";
+        private const string filename = "alldata.json";
 
         public static IEnumerable<Data> GetData()
         {
