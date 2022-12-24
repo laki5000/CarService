@@ -22,6 +22,7 @@ namespace CarService_Client
     {
         public MainWindow()
         {
+            //teszt
             InitializeComponent();
         }
     }

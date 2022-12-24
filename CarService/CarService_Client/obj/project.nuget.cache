@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MkghQ31arvGfN4SprfHD2MrK++9ZLeMZQK9k+GhisR+8AaSbat+/ujUkIBQhgCg3679utD2QjZLFUwyEGF2JkA==",
+  "dgSpecHash": "IuWO55VdAA+iemd+iB3+S2rU+vzFO8IDb/9bMi6tPnxaNLA5WLV36a5r8wsAjn4taw9D+xQiJTEhOKage9fkLA==",
   "success": true,
-  "projectFilePath": "D:\\Suli\\Egyetem\\5.felev\\c#\\CarService\\CarService_Client\\CarService_Client.csproj",
+  "projectFilePath": "C:\\Users\\University\\c#\\CarService\\CarService\\CarService_Client\\CarService_Client.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
