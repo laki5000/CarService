@@ -20,7 +20,7 @@ namespace CarService_Common.Models
         public string Status { get; set; }
         public override string ToString()
         {
-            return $"{Name} - {Type} - {PlateNumber} - {ManufactureYear} - {WorkCategory} - {Description} - {Seriousness}";
+            return $"{Name} - {Type} - {PlateNumber} - {ManufactureYear} - {WorkCategory} - {Description} - {Seriousness} - {Status}";
         }
 
 
