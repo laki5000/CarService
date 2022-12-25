@@ -33,7 +33,7 @@ namespace CarService_Mechanic
             data.Name = "Elso";
             data.Type = "Tipus";
             data.PlateNumber = "Tipus";
-            data.ManufactureYear = new DateTime(2008, 5, 1, 8, 30, 52);
+            data.ManufactureYear = 2002;
             data.WorkCategory = "Kat";
             data.Description = "Des";
             data.Seriousness = 5;

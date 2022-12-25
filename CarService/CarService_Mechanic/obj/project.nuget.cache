@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "eSAnptfJDho68APMWDPW5qwl9Xx0cgPcqHt9dFAiGx9iG9VtafuFMVbRib1z43AUv/4r7TDLdDV+9NAux/+dwQ==",
+  "dgSpecHash": "MTaPJrkLGc9NVdW9e6l4vMOZ1GONFGWa3Sy8XclT3LByMjC/qddL1ew11e5QFjH/AxcqZEn3CjQF+SFkiCQkDA==",
   "success": true,
-  "projectFilePath": "D:\\Suli\\Egyetem\\5.felev\\c#\\CarService\\CarService_Mechanic\\CarService_Mechanic.csproj",
+  "projectFilePath": "C:\\Users\\University\\c#\\CarService\\CarService\\CarService_Mechanic\\CarService_Mechanic.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\lakat\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+    "C:\\Users\\University\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
   ],
   "logs": []
 }

@@ -24,5 +24,11 @@ namespace CarService_Client
         {
             InitializeComponent();
         }
+        private void HandleButtonMainCustomer(object sender, RoutedEventArgs e)
+        {
+            Client client = new Client();
+            client.Show();
+            Close();
+        }
     }
 }

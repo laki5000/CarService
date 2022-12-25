@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\lakat\\.nuget\\packages\\": {}
+    "C:\\Users\\University\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Suli\\Egyetem\\5.felev\\c#\\CarService\\CarService_Common\\CarService_Common.csproj",
+      "projectUniqueName": "C:\\Users\\University\\c#\\CarService\\CarService\\CarService_Common\\CarService_Common.csproj",
       "projectName": "CarService_Common",
-      "projectPath": "D:\\Suli\\Egyetem\\5.felev\\c#\\CarService\\CarService_Common\\CarService_Common.csproj",
-      "packagesPath": "C:\\Users\\lakat\\.nuget\\packages\\",
-      "outputPath": "D:\\Suli\\Egyetem\\5.felev\\c#\\CarService\\CarService_Common\\obj\\",
+      "projectPath": "C:\\Users\\University\\c#\\CarService\\CarService\\CarService_Common\\CarService_Common.csproj",
+      "packagesPath": "C:\\Users\\University\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\University\\c#\\CarService\\CarService\\CarService_Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lakat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\University\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
