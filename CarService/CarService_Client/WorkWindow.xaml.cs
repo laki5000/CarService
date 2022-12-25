@@ -38,7 +38,6 @@ namespace CarService_Client
                 TextBoxWorkCategory.Text = _data.WorkCategory;
                 TextBoxShortDescription.Text = _data.Description;
                 TextBoxSeverity.Text = _data.Seriousness.ToString();
-                
 
                 ButtonCreate.Visibility = Visibility.Collapsed;
                 ButtonUpdate.Visibility = Visibility.Visible;
@@ -69,6 +68,7 @@ namespace CarService_Client
                 _data.WorkCategory = TextBoxWorkCategory.Text;
                 _data.Description = TextBoxShortDescription.Text;
                 _data.Seriousness = int.Parse(TextBoxSeverity.Text);
+                _data.Status = "Felvett munka";
 
                 DataDataProvider.CreateData(_data);
 
