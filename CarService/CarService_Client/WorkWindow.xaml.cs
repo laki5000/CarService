@@ -27,7 +27,7 @@ namespace CarService_Client
         {
             InitializeComponent();
 
-            if(data != null)
+            if (data != null)
             {
                 _data = data;
 
@@ -54,12 +54,22 @@ namespace CarService_Client
         private bool ValidateData()
         {
             //TODO
-            return true;
+            if (ValidateString(TextBoxName.Text) && ValidateString(TextBoxCarMake.Text))
+            {
+                if (ValidateNumber(TextBoxYear.Text) && ValidateNumber(TextBoxSeverity.Text))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
+
+
 
         private void HandleButtonCreateClicked(object sender, RoutedEventArgs e)
         {
-            if(ValidateData())
+            if (ValidateData())
             {
                 _data.Name = TextBoxName.Text;
                 _data.Type = TextBoxCarMake.Text;
@@ -68,7 +78,7 @@ namespace CarService_Client
                 _data.WorkCategory = TextBoxWorkCategory.Text;
                 _data.Description = TextBoxShortDescription.Text;
                 _data.Seriousness = int.Parse(TextBoxSeverity.Text);
-                _data.Status = "Felvett munka";
+                _data.Status = "Open";
 
                 DataDataProvider.CreateData(_data);
 
@@ -94,6 +104,58 @@ namespace CarService_Client
                 DialogResult = true;
                 Close();
             }
+        }
+
+        private bool ValidateString(string text)
+        {
+            if (string.IsNullOrEmpty(text))
+            {
+                MessageBox.Show("The field cannot be empty!");
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(text))
+            {
+                MessageBox.Show("The field cannot be whitespace!");
+                return false;
+            }
+            /*
+            if (text.Split("").ToString().Any(ch => char.IsLetterOrDigit(ch)))
+            {
+                MessageBox.Show("The field cannot contain special characters!");
+                return false;
+            }*/
+
+            return true;
+        }
+
+        private bool ValidateNumber(string text)
+        {
+            if (!text.ToString().All(c => char.IsDigit(c)))
+            {
+                MessageBox.Show("The field Year and Severity can only contain numbers!");
+                return false;
+            }
+
+            return true;
+        }
+
+        private bool ValidateLicensePlate(string text)
+        {
+            if (text.Contains('-'))
+            {
+                string[] pieces = text.Split("-");
+                
+                if (pieces.Length != 2 || pieces[0].Any(c => char.IsDigit(c)) || pieces[1].Any(c => char.IsLetter(c)))
+                {
+                    return false;
+                }
+
+                return true;
+            }
+
+            return false;
+
+
         }
     }
 }

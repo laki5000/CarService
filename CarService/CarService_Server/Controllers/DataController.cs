@@ -59,6 +59,7 @@ namespace CarService_Server.Controllers
                 dataToUpdate.WorkCategory = data.WorkCategory;
                 dataToUpdate.Description = data.Description;
                 dataToUpdate.Seriousness = data.Seriousness;
+                dataToUpdate.Status = data.Status;
 
                 DataRepository.StoreData(datas);
                 return Ok();

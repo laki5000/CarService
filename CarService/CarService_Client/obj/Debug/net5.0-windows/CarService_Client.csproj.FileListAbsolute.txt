@@ -8,13 +8,11 @@ C:\Users\University\c#\CarService\CarService\CarService_Client\bin\Debug\net5.0-
 C:\Users\University\c#\CarService\CarService\CarService_Client\bin\Debug\net5.0-windows\CarService_Common.dll
 C:\Users\University\c#\CarService\CarService\CarService_Client\bin\Debug\net5.0-windows\CarService_Common.pdb
 C:\Users\University\c#\CarService\CarService\CarService_Client\obj\Debug\net5.0-windows\CarService_Client.csproj.AssemblyReference.cache
-C:\Users\University\c#\CarService\CarService\CarService_Client\obj\Debug\net5.0-windows\Client.g.cs
 C:\Users\University\c#\CarService\CarService\CarService_Client\obj\Debug\net5.0-windows\MainWindow.g.cs
 C:\Users\University\c#\CarService\CarService\CarService_Client\obj\Debug\net5.0-windows\WorkWindow.g.cs
 C:\Users\University\c#\CarService\CarService\CarService_Client\obj\Debug\net5.0-windows\App.g.cs
 C:\Users\University\c#\CarService\CarService\CarService_Client\obj\Debug\net5.0-windows\CarService_Client_MarkupCompile.cache
 C:\Users\University\c#\CarService\CarService\CarService_Client\obj\Debug\net5.0-windows\CarService_Client_MarkupCompile.lref
-C:\Users\University\c#\CarService\CarService\CarService_Client\obj\Debug\net5.0-windows\Client.baml
 C:\Users\University\c#\CarService\CarService\CarService_Client\obj\Debug\net5.0-windows\MainWindow.baml
 C:\Users\University\c#\CarService\CarService\CarService_Client\obj\Debug\net5.0-windows\WorkWindow.baml
 C:\Users\University\c#\CarService\CarService\CarService_Client\obj\Debug\net5.0-windows\CarService_Client.g.resources

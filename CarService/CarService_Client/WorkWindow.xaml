@@ -54,8 +54,6 @@
         <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Bottom">
             <Button x:Name="ButtonCreate" Content="Create" Width="80" Margin="10" Click="HandleButtonCreateClicked"></Button>
             <Button x:Name="ButtonUpdate" Content="Update" Width="80" Margin="10" Click="HandleButtonUpdateClicked"></Button>
-
-            
         </StackPanel>
         
     </Grid>

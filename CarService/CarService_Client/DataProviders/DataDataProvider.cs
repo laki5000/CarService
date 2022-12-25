@@ -52,6 +52,13 @@ namespace CarService_Client.DataProviders
             {
                 var RawData = JsonConvert.SerializeObject(data);
                 var content = new StringContent(RawData, Encoding.UTF8, "application/json");
+
+                var response = client.PutAsync(_url, content).Result;
+                if (!response.IsSuccessStatusCode)
+                {
+                    throw new InvalidOperationException(response.StatusCode.ToString());
+                }
+
             }
         }
     }
