@@ -68,7 +68,7 @@ namespace CarService_Client
                 _data.WorkCategory = TextBoxWorkCategory.Text;
                 _data.Description = TextBoxShortDescription.Text;
                 _data.Seriousness = int.Parse(TextBoxSeverity.Text);
-                _data.Status = "Felvett munka";
+                _data.Status = "Opened";
 
                 DataDataProvider.CreateData(_data);
 
