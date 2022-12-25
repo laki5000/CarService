@@ -103,10 +103,48 @@ namespace CarService_Client
             }
 
             ClientListBox.ItemsSource = AllData.ToList();
+        }
 
+        private void HandleSearchByButtonClicked(object sender, RoutedEventArgs e)
+        {
+            var AllData = DataDataProvider.GetAllData();
 
+            switch (ComboBoxOrderBy.SelectedIndex)
+            {
+                case 0:
+                    break;
+                case 1:
+                    AllData = AllData.Where(x => x.Name.Contains(TextBoxSearchBy.Text));
+                    break;
+                case 2:
+                    AllData = AllData.Where(x => x.Type.Contains(TextBoxSearchBy.Text));
+                    break;
+                case 3:
+                    AllData = AllData.Where(x => x.PlateNumber.Contains(TextBoxSearchBy.Text));
+                    break;
+                case 4:
+                    AllData = AllData.Where(x => x.ManufactureYear == int.Parse(TextBoxSearchBy.Text));
+                    break;
+                case 5:
+                    AllData = AllData.Where(x => x.WorkCategory.Contains(TextBoxSearchBy.Text));
+                    break;
+                case 6:
+                    AllData = AllData.Where(x => x.Description.Contains(TextBoxSearchBy.Text));
+                    break;
+                case 7:
+                    AllData = AllData.Where(x => x.Seriousness == int.Parse(TextBoxSearchBy.Text));
+                    break;
 
-            //UpdateDataListBox();
+                default: break;
+            }
+
+            if (ComboBoxAsc.SelectedIndex == 1)
+            {
+                AllData = AllData.Reverse();
+            }
+
+            ClientListBox.ItemsSource = AllData.ToList();
+
         }
 
     }

@@ -36,6 +36,7 @@
                 <ComboBoxItem Content="Asc" IsSelected="True"/>
                 <ComboBoxItem Content="Desc"/>
             </ComboBox>
+            <TextBox x:Name="TextBoxSearchBy" Grid.Row="2" Margin="15,0,15,15" Width="150"/>
         </StackPanel>
         
     </Grid>
