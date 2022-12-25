@@ -145,12 +145,13 @@ namespace CarService_Client
             {
                 string[] pieces = text.Split("-");
                 
-                if (pieces.Length != 2 || pieces[0].Any(c => char.IsDigit(c)) || pieces[1].Any(c => char.IsLetter(c)))
+                if (pieces.Length == 2 && pieces[0].Length == 3 &&
+                    pieces[0].All(c => char.IsLetter(c)) && pieces[1].Length == 3 && pieces[1].All(c => char.IsDigit(c)))
                 {
-                    return false;
+                    return true;
                 }
 
-                return true;
+                return false;
             }
 
             return false;
