@@ -58,5 +58,10 @@ namespace CarService_Client
 
         }
 
+        private void HandleRefreshButtonClicked(object sender, RoutedEventArgs e)
+        {
+            UpdateDataListBox();
+        }
+
     }
 }

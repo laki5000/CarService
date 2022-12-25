@@ -17,7 +17,13 @@
 
         <ListBox x:Name="ClientListBox" Grid.Row="1" Margin="15" SelectionMode="Single" SelectionChanged="List_SelectionChanged"></ListBox>
 
-        <Button Grid.Row="2" Content="Submit new work" Width="100" HorizontalAlignment="Right" Margin="15,0,15,15" Click="HandleSubmitButtonClicked"></Button>
+        
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Bottom">
+            <Button Grid.Row="2" Content="Refresh" Width="70" HorizontalAlignment="Right" Margin="15,0,15,15" Click="HandleRefreshButtonClicked"/>
+            <Button Grid.Row="2" Content="Submit new work" Width="100" HorizontalAlignment="Right" Margin="15,0,15,15" Click="HandleSubmitButtonClicked"/>
+        </StackPanel>
+        
 
 
     </Grid>

@@ -35,7 +35,7 @@ namespace CarService_Client
                 TextBoxCarMake.Text = _data.Type;
                 TextBoxLicensePlate.Text = _data.PlateNumber;
                 TextBoxYear.Text = _data.ManufactureYear.ToString();
-                TextBoxWorkCategory.Text = _data.WorkCategory;
+                ComboBoxWorkCategory.Text = _data.WorkCategory;
                 TextBoxShortDescription.Text = _data.Description;
                 TextBoxSeverity.Text = _data.Seriousness.ToString();
 
@@ -58,7 +58,10 @@ namespace CarService_Client
             {
                 if (ValidateNumber(TextBoxYear.Text) && ValidateNumber(TextBoxSeverity.Text))
                 {
-                    return true;
+                    if(ValidateLicensePlate(TextBoxLicensePlate.Text) && ValidateSeverity(TextBoxSeverity.Text))
+                    {
+                        return true;
+                    }
                 }
             }
 
@@ -75,7 +78,7 @@ namespace CarService_Client
                 _data.Type = TextBoxCarMake.Text;
                 _data.PlateNumber = TextBoxLicensePlate.Text;
                 _data.ManufactureYear = int.Parse(TextBoxYear.Text);
-                _data.WorkCategory = TextBoxWorkCategory.Text;
+                _data.WorkCategory = ComboBoxWorkCategory.Text;
                 _data.Description = TextBoxShortDescription.Text;
                 _data.Seriousness = int.Parse(TextBoxSeverity.Text);
                 _data.Status = "Open";
@@ -95,7 +98,7 @@ namespace CarService_Client
                 _data.Type = TextBoxCarMake.Text;
                 _data.PlateNumber = TextBoxLicensePlate.Text;
                 _data.ManufactureYear = int.Parse(TextBoxYear.Text);
-                _data.WorkCategory = TextBoxWorkCategory.Text;
+                _data.WorkCategory = ComboBoxWorkCategory.Text;
                 _data.Description = TextBoxShortDescription.Text;
                 _data.Seriousness = int.Parse(TextBoxSeverity.Text);
 
@@ -150,13 +153,26 @@ namespace CarService_Client
                 {
                     return true;
                 }
-
-                return false;
             }
 
+            MessageBox.Show("The license plate format must be XXX-000!");
             return false;
+        }
 
+        private bool ValidateSeverity(string text)
+        {
+            if (ValidateNumber(text))
+            {
+                int number = int.Parse(text);
+                
+                if(number > 0 && number < 11)
+                {
+                    return true;
+                }
+            }
 
+            MessageBox.Show("The severity must be a number between 1 and 10");
+            return false;
         }
     }
 }
