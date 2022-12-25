@@ -17,14 +17,26 @@
 
         <ListBox x:Name="ClientListBox" Grid.Row="1" Margin="15" SelectionMode="Single" SelectionChanged="List_SelectionChanged"></ListBox>
 
-        
-
         <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Bottom">
             <Button Grid.Row="2" Content="Refresh" Width="70" HorizontalAlignment="Right" Margin="15,0,15,15" Click="HandleRefreshButtonClicked"/>
             <Button Grid.Row="2" Content="Submit new work" Width="100" HorizontalAlignment="Right" Margin="15,0,15,15" Click="HandleSubmitButtonClicked"/>
+            <Button Grid.Row="2" Content="Order by" Width="60" HorizontalAlignment="Right" Margin="15,0,15,15" Click="HandleOrderByButtonClicked"/>
+            <Button Grid.Row="2" Content="Search by" Width="60" HorizontalAlignment="Right" Margin="15,0,15,15" Click="HandleSearchByButtonClicked"/>
+            <ComboBox x:Name="ComboBoxOrderBy" Grid.Row="2" Margin="15,0,15,15">
+                <ComboBoxItem Content="Date" IsSelected="True"/>
+                <ComboBoxItem Content="Name"/>
+                <ComboBoxItem Content="Car Make"/>
+                <ComboBoxItem Content="License Plate"/>
+                <ComboBoxItem Content="Year"/>
+                <ComboBoxItem Content="Work Category"/>
+                <ComboBoxItem Content="Short Description"/>
+                <ComboBoxItem Content="Severity"/>
+            </ComboBox>
+            <ComboBox x:Name="ComboBoxAsc" Grid.Row="2" Margin="15,0,15,15">
+                <ComboBoxItem Content="Asc" IsSelected="True"/>
+                <ComboBoxItem Content="Desc"/>
+            </ComboBox>
         </StackPanel>
         
-
-
     </Grid>
 </Window>

@@ -63,5 +63,51 @@ namespace CarService_Client
             UpdateDataListBox();
         }
 
+        //HandleFilterButtonClicked
+        private void HandleOrderByButtonClicked(object sender, RoutedEventArgs e)
+        {
+            var AllData = DataDataProvider.GetAllData();
+
+            switch (ComboBoxOrderBy.SelectedIndex)
+            {
+                case 0:
+                    break;
+                case 1: 
+                    AllData = AllData.OrderBy(x => x.Name);
+                    break;
+                case 2:
+                    AllData = AllData.OrderBy(x => x.Type);
+                    break;
+                case 3:
+                    AllData = AllData.OrderBy(x => x.PlateNumber);
+                    break;
+                case 4:
+                    AllData = AllData.OrderBy(x => x.ManufactureYear);
+                    break;
+                case 5:
+                    AllData = AllData.OrderBy(x => x.WorkCategory);
+                    break;
+                case 6:
+                    AllData = AllData.OrderBy(x => x.Description);
+                    break;
+                case 7:
+                    AllData = AllData.OrderBy(x => x.Seriousness);
+                    break;
+
+                default: break;
+            }
+
+            if (ComboBoxAsc.SelectedIndex == 1)
+            {
+                AllData = AllData.Reverse();
+            }
+
+            ClientListBox.ItemsSource = AllData.ToList();
+
+
+
+            //UpdateDataListBox();
+        }
+
     }
 }
