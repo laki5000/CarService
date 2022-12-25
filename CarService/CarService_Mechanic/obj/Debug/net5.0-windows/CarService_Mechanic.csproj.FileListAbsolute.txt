@@ -50,3 +50,5 @@ C:\Users\University\c#\CarService\CarService\CarService_Mechanic\obj\Debug\net5.
 C:\Users\University\c#\CarService\CarService\CarService_Mechanic\obj\Debug\net5.0-windows\CarService_Mechanic.csproj.CopyComplete
 C:\Users\University\c#\CarService\CarService\CarService_Mechanic\obj\Debug\net5.0-windows\CarService_Mechanic.genruntimeconfig.cache
 C:\Users\University\c#\CarService\CarService\CarService_Mechanic\obj\Debug\net5.0-windows\ref\CarService_Mechanic.dll
+D:\Suli\Egyetem\5.felev\c#\CarService\CarService_Mechanic\obj\Debug\net5.0-windows\WorkWindow.g.cs
+D:\Suli\Egyetem\5.felev\c#\CarService\CarService_Mechanic\obj\Debug\net5.0-windows\WorkWindow.baml
