@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\University\c#\CarService\CarService\CarService_Mechanic\obj\Debug\net5.0-windows\
+D:\Suli\Egyetem\5.felev\c#\CarService\CarService_Mechanic\obj\Debug\net5.0-windows\
 CarService_Mechanic
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\University\c#\CarService\CarService\CarService_Mechanic\App.xaml
-11407045341
+D:\Suli\Egyetem\5.felev\c#\CarService\CarService_Mechanic\App.xaml
+2462953314
 
-6-2127016307
-195-1811174244
-MainWindow.xaml;
+7171874975
+195-1897760737
+MainWindow.xaml;WorkWindow.xaml;
 
-False
+True
 
