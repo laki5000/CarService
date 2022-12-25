@@ -24,6 +24,7 @@ namespace CarService_Client
         public MainWindow()
         {
             InitializeComponent();
+            UpdateDataListBox();
         }
 
         private void List_SelectionChanged(object sender, SelectionChangedEventArgs args)

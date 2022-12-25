@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarService_Client"
         mc:Ignorable="d"
-        Title="B &amp; L Car Service - Recruiter Client" Height="450" Width="800">
+        Title="B &amp; L Car Service - Client" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

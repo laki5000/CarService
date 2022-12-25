@@ -1,5 +1,5 @@
-﻿using CarService_Common.Models;
-using CarService_Mechanic.DataProviders;
+﻿using CarService_Mechanic.DataProviders;
+using CarService_Common.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,32 +12,47 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace CarService_Mechanic
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Client.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+            UpdateDataListBox();
         }
 
-        private void btn1_Click(object sender, RoutedEventArgs e)
+        private void List_SelectionChanged(object sender, SelectionChangedEventArgs args)
         {
-            Data data = new Data();
-            data.Name = "Elso";
-            data.Type = "Tipus";
-            data.PlateNumber = "Tipus";
-            data.ManufactureYear = 2002;
-            data.WorkCategory = "Kat";
-            data.Description = "Des";
-            data.Seriousness = 5;
-            DataDataProvider.CreateData(data);
+            var selectedData = ClientListBox.SelectedItem as Data;
+
+            if (selectedData != null)
+            {
+                var window = new WorkWindow(selectedData);
+                if (window.ShowDialog() ?? false)
+                {
+                    UpdateDataListBox();
+                }
+
+                ClientListBox.UnselectAll();
+            }
         }
+
+        private void HandleRefreshButtonClicked(object sender, RoutedEventArgs e)
+        {
+            UpdateDataListBox();
+        }
+        private void UpdateDataListBox()
+        {
+            var AllData = DataDataProvider.GetData().ToList();
+            ClientListBox.ItemsSource = AllData;
+
+        }
+
     }
 }

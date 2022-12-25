@@ -5,9 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarService_Mechanic"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="B &amp; L Car Service - Mechanic" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btn1" Click="btn1_Click" Content="Button" Width="50" Height="50">
-        </Button>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Work List" FontWeight="Bold" Margin="15,15,15,0"></Label>
+
+        <ListBox x:Name="ClientListBox" Grid.Row="1" Margin="15" SelectionMode="Single" SelectionChanged="List_SelectionChanged"></ListBox>
+
+        <Button Grid.Row="2" Content="Refresh" Width="100" HorizontalAlignment="Right" Margin="15,0,15,15" Click="HandleRefreshButtonClicked"></Button>
+
+
     </Grid>
 </Window>
