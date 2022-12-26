@@ -125,7 +125,7 @@ namespace CarService_Client {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CarService_Client;component/workwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CarService_Client;V1.0.0.0;component/workwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\WorkWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

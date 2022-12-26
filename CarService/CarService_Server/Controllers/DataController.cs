@@ -21,9 +21,8 @@ namespace CarService_Server.Controllers
         [HttpGet("{id}")]
         public ActionResult<Data> Get(int id)
         {
-            var datas = DataRepository.GetData();
+            var data = DataRepository.GetDataById(id);
 
-            var data = datas.FirstOrDefault(x => x.Id == id);
             if (data != null)
             {
                 return Ok(data);
@@ -35,68 +34,36 @@ namespace CarService_Server.Controllers
         [HttpPost]
         public ActionResult Post([FromBody] Data data)
         {
-            var datas = DataRepository.GetData().ToList();
+            DataRepository.AddData(data);
 
-            data.Id = GetNewId(datas);
-            datas.Add(data);
-
-            DataRepository.StoreData(datas);
             return Ok();
         }
 
-        [HttpPut]
-        public ActionResult Put([FromBody] Data data)
+        [HttpPut("{id}")]
+        public ActionResult Put([FromBody] Data data, long id)
         {
-            var datas = DataRepository.GetData().ToList();
+            var dbdata = DataRepository.GetDataById(id);
 
-            var dataToUpdate = datas.FirstOrDefault(p => p.Id == data.Id);
-            if (dataToUpdate != null)
+            if (dbdata != null)
             {
-                dataToUpdate.Name = data.Name;
-                dataToUpdate.Type = data.Type;
-                dataToUpdate.PlateNumber = data.PlateNumber;
-                dataToUpdate.ManufactureYear = data.ManufactureYear;
-                dataToUpdate.WorkCategory = data.WorkCategory;
-                dataToUpdate.Description = data.Description;
-                dataToUpdate.Seriousness = data.Seriousness;
-                dataToUpdate.Status = data.Status;
-
-                DataRepository.StoreData(datas);
+                DataRepository.UpdateData(data);
                 return Ok();
             }
-
             return NotFound();
         }
 
         [HttpDelete("{id}")]
-        public ActionResult Delete(int id)
+        public ActionResult Delete(long id)
         {
-            var datas = DataRepository.GetData().ToList();
+            var data = DataRepository.GetDataById(id);
 
-            var dataToDelete = datas.FirstOrDefault(p => p.Id == id);
-            if (dataToDelete != null)
+            if (data != null)
             {
-                datas.Remove(dataToDelete);
-
-                DataRepository.StoreData(datas);
+                DataRepository.DeleteData(data);
                 return Ok();
             }
 
             return NotFound();
-        }
-
-        private long GetNewId(IEnumerable<Data> datas)
-        {
-            long newId = 0;
-            foreach (var data in datas)
-            {
-                if (newId < data.Id)
-                {
-                    newId = data.Id;
-                }
-            }
-
-            return newId + 1;
         }
     }
 }

@@ -82,6 +82,7 @@ namespace CarService_Client
                 _data.Description = TextBoxShortDescription.Text;
                 _data.Seriousness = int.Parse(TextBoxSeverity.Text);
                 _data.Status = "Open";
+                _data.WorkHourEstimation = 1;
 
                 DataDataProvider.CreateData(_data);
 
@@ -109,7 +110,7 @@ namespace CarService_Client
             }
         }
 
-        public static bool ValidateString(string text)
+        internal static bool ValidateString(string text)
         {
             if (string.IsNullOrEmpty(text))
             {
@@ -142,7 +143,7 @@ namespace CarService_Client
             return true;
         }
 
-        public static bool ValidateLicensePlate(string text)
+        internal static bool ValidateLicensePlate(string text)
         {
             if (text.Contains('-'))
             {
@@ -159,7 +160,7 @@ namespace CarService_Client
             return false;
         }
 
-        public static bool ValidateSeverity(string text)
+        internal static bool ValidateSeverity(string text)
         {
             if (ValidateNumber(text))
             {
