@@ -114,16 +114,28 @@ namespace CarService_Client
                 case 0:
                     break;
                 case 1:
-                    AllData = AllData.Where(x => x.Name.Contains(TextBoxSearchBy.Text));
+                    if (WorkWindow.ValidateString(TextBoxSearchBy.Text))
+                    {
+                        AllData = AllData.Where(x => x.Name.Contains(TextBoxSearchBy.Text));
+                    }
                     break;
                 case 2:
-                    AllData = AllData.Where(x => x.Type.Contains(TextBoxSearchBy.Text));
+                    if (WorkWindow.ValidateString(TextBoxSearchBy.Text))
+                    {
+                        AllData = AllData.Where(x => x.Type.Contains(TextBoxSearchBy.Text));
+                    }
                     break;
                 case 3:
-                    AllData = AllData.Where(x => x.PlateNumber.Contains(TextBoxSearchBy.Text));
+                    if (WorkWindow.ValidateLicensePlate(TextBoxSearchBy.Text))
+                    {
+                        AllData = AllData.Where(x => x.PlateNumber.Contains(TextBoxSearchBy.Text));
+                    }
                     break;
                 case 4:
-                    AllData = AllData.Where(x => x.ManufactureYear == int.Parse(TextBoxSearchBy.Text));
+                    if (WorkWindow.ValidateNumber(TextBoxSearchBy.Text))
+                    {
+                        AllData = AllData.Where(x => x.ManufactureYear == int.Parse(TextBoxSearchBy.Text));
+                    }
                     break;
                 case 5:
                     AllData = AllData.Where(x => x.WorkCategory.Contains(TextBoxSearchBy.Text));
@@ -132,7 +144,10 @@ namespace CarService_Client
                     AllData = AllData.Where(x => x.Description.Contains(TextBoxSearchBy.Text));
                     break;
                 case 7:
-                    AllData = AllData.Where(x => x.Seriousness == int.Parse(TextBoxSearchBy.Text));
+                    if (WorkWindow.ValidateNumber(TextBoxSearchBy.Text))
+                    {
+                        AllData = AllData.Where(x => x.Seriousness == int.Parse(TextBoxSearchBy.Text));
+                    }
                     break;
 
                 default: break;
