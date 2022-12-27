@@ -1,9 +1,7 @@
 ﻿using CarService_Common.Models;
 using CarService_Server.Repositories;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace CarService_Server.Controllers
 {
@@ -46,7 +44,7 @@ namespace CarService_Server.Controllers
 
             if (dbdata != null)
             {
-                DataRepository.UpdateData(data);
+                DataRepository.UpdateData(dbdata);
                 return Ok();
             }
             return NotFound();

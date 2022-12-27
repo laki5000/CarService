@@ -11,6 +11,8 @@ D:\Suli\Egyetem\5.felev\c#\CarService\CarService_Common\obj\Debug\net5.0\refint\
 D:\Suli\Egyetem\5.felev\c#\CarService\CarService_Common\obj\Debug\net5.0\CarService_Common.pdb
 D:\Suli\Egyetem\5.felev\c#\CarService\CarService_Common\obj\Debug\net5.0\ref\CarService_Common.dll
 C:\Users\University\c#\CarService\CarService\CarService_Common\bin\Debug\net5.0\CarService_Common.deps.json
+C:\Users\University\c#\CarService\CarService\CarService_Common\bin\Debug\net5.0\CarService_Common.runtimeconfig.json
+C:\Users\University\c#\CarService\CarService\CarService_Common\bin\Debug\net5.0\CarService_Common.runtimeconfig.dev.json
 C:\Users\University\c#\CarService\CarService\CarService_Common\bin\Debug\net5.0\CarService_Common.dll
 C:\Users\University\c#\CarService\CarService\CarService_Common\bin\Debug\net5.0\CarService_Common.pdb
 C:\Users\University\c#\CarService\CarService\CarService_Common\obj\Debug\net5.0\CarService_Common.csproj.AssemblyReference.cache
@@ -21,4 +23,5 @@ C:\Users\University\c#\CarService\CarService\CarService_Common\obj\Debug\net5.0\
 C:\Users\University\c#\CarService\CarService\CarService_Common\obj\Debug\net5.0\CarService_Common.dll
 C:\Users\University\c#\CarService\CarService\CarService_Common\obj\Debug\net5.0\refint\CarService_Common.dll
 C:\Users\University\c#\CarService\CarService\CarService_Common\obj\Debug\net5.0\CarService_Common.pdb
+C:\Users\University\c#\CarService\CarService\CarService_Common\obj\Debug\net5.0\CarService_Common.genruntimeconfig.cache
 C:\Users\University\c#\CarService\CarService\CarService_Common\obj\Debug\net5.0\ref\CarService_Common.dll

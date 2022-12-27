@@ -222,6 +222,9 @@
       "System.ComponentModel.Annotations/4.7.0": {},
       "System.Diagnostics.DiagnosticSource/4.7.0": {},
       "CarService_Common/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.3"
+        },
         "runtime": {
           "CarService_Common.dll": {}
         }
