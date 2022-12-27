@@ -24,7 +24,6 @@ D:\Suli\Egyetem\5.felev\c#\CarService\CarService_Server\obj\Debug\net5.0\CarServ
 D:\Suli\Egyetem\5.felev\c#\CarService\CarService_Server\obj\Debug\net5.0\CarService_Server.genruntimeconfig.cache
 D:\Suli\Egyetem\5.felev\c#\CarService\CarService_Server\obj\Debug\net5.0\ref\CarService_Server.dll
 D:\Suli\Egyetem\5.felev\c#\CarService\CarService_Server\bin\Debug\net5.0\data.json
-C:\Users\University\c#\CarService\CarService\CarService_Server\bin\Debug\net5.0\web.config
 C:\Users\University\c#\CarService\CarService\CarService_Server\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\University\c#\CarService\CarService\CarService_Server\bin\Debug\net5.0\appsettings.json
 C:\Users\University\c#\CarService\CarService\CarService_Server\bin\Debug\net5.0\CarService_Server.exe

@@ -44,7 +44,7 @@ namespace CarService_Server.Controllers
 
             if (dbdata != null)
             {
-                DataRepository.UpdateData(dbdata);
+                DataRepository.UpdateData(data);
                 return Ok();
             }
             return NotFound();

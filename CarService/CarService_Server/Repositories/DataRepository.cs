@@ -76,10 +76,10 @@ namespace CarService_Server.Repositories
                     ETA = 8;
                     break;
                 case "Suspension":
-                    ETA = 3;
+                    ETA = 6;
                     break;
                 case "Brake":
-                    ETA = 3;
+                    ETA = 4;
                     break;
             }
 
