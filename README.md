@@ -1,3 +1,5 @@
+Sajnos a brancheléseket elrontottuk (vagyis rontottam én, bence), még viszonylag új a github. Remélem nem akkora probléma, de tanultam belőle legalább.
+
 # CarService
 Egy autószerelő műhelyben működő kliens - szerver alkalmazás implementálása.
 
