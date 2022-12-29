@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarService_Mechanic"
         mc:Ignorable="d"
-        Title="B &amp; L Car Service - Work" Height="500" Width="400">
+        Title="B &amp; L Car Service - Mechanic" Height="500" Width="400">
     <Grid>
 
         <Grid.RowDefinitions>
@@ -54,10 +54,8 @@
 
         <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Bottom">
             <Button x:Name="ButtonUpdate" Content="Update" Width="80" Margin="10" Click="HandleButtonUpdateClicked"></Button>
-
-
         </StackPanel>
-        <ComboBox HorizontalAlignment="Left" Margin="160,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="217" x:Name="StatusComboBox">
+        <ComboBox HorizontalAlignment="Left" Margin="159,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="231" x:Name="StatusComboBox">
             <ComboBoxItem Content="Open"/>
             <ComboBoxItem Content="In Progress"/>
             <ComboBoxItem Content="Completed"/>

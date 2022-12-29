@@ -47,10 +47,10 @@ namespace CarService_Mechanic.DataProviders
         {
             using (var client = new HttpClient())
             {
-                var rawData = JsonConvert.SerializeObject(data);
-                var content = new StringContent(rawData, Encoding.UTF8, "application/json");
-
+                var RawData = JsonConvert.SerializeObject(data);
+                var content = new StringContent(RawData, Encoding.UTF8, "application/json");
                 var response = client.PutAsync(_url, content).Result;
+
                 if (!response.IsSuccessStatusCode)
                 {
                     throw new InvalidOperationException(response.StatusCode.ToString());

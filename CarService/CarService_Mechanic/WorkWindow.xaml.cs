@@ -37,30 +37,128 @@ namespace CarService_Mechanic
             TextBoxWorkCategory.Text = _data.WorkCategory;
             TextBoxShortDescription.Text = _data.Description;
             TextBoxSeverity.Text = _data.Seriousness.ToString();
-
+            StatusComboBox.Text = _data.Status;
             ButtonUpdate.Visibility = Visibility.Visible;
+        }
 
-            if(_data.Status.Equals("Opened"))
+
+        private bool ValidateData()
+        {
+            //TODO
+            if (ValidateString(TextBoxName.Text) && ValidateString(TextBoxCarMake.Text))
             {
-                StatusComboBox.SelectedIndex = 0;
+                if (ValidateNumber(TextBoxYear.Text) && ValidateNumber(TextBoxSeverity.Text))
+                {
+                    if (ValidateLicensePlate(TextBoxLicensePlate.Text) && ValidateSeverity(TextBoxSeverity.Text))
+                    {
+                        return true;
+                    }
+                }
             }
-            else if (_data.Status.Equals("In Progress"))
+
+            return false;
+        }
+
+
+
+        private void HandleButtonCreateClicked(object sender, RoutedEventArgs e)
+        {
+            if (ValidateData())
             {
-                StatusComboBox.SelectedIndex = 1;
-            }
-            else if (_data.Status.Equals("Completed"))
-            {
-                StatusComboBox.SelectedIndex = 2;
+                _data.Name = TextBoxName.Text;
+                _data.Type = TextBoxCarMake.Text;
+                _data.PlateNumber = TextBoxLicensePlate.Text;
+                _data.ManufactureYear = int.Parse(TextBoxYear.Text);
+                _data.WorkCategory = TextBoxWorkCategory.Text;
+                _data.Description = TextBoxShortDescription.Text;
+                _data.Seriousness = int.Parse(TextBoxSeverity.Text);
+                _data.Status = "Open";
+                _data.WorkHourEstimation = 1;
+
+                DataDataProvider.CreateData(_data);
+
+                DialogResult = true;
+                Close();
             }
         }
 
         private void HandleButtonUpdateClicked(object sender, RoutedEventArgs e)
         {
-            _data.Status = StatusComboBox.Text.ToString();
-            DataDataProvider.UpdateData(_data);
+            if (ValidateData())
+            {
+                _data.Status = StatusComboBox.Text.ToString();
 
-            DialogResult = true;
-            Close();
+                DataDataProvider.UpdateData(_data);
+
+                DialogResult = true;
+                Close();
+            }
+        }
+
+        internal static bool ValidateString(string text)
+        {
+            if (string.IsNullOrEmpty(text))
+            {
+                MessageBox.Show("The field cannot be empty!");
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(text))
+            {
+                MessageBox.Show("The field cannot be whitespace!");
+                return false;
+            }
+            /*
+            if (text.Split("").ToString().Any(ch => char.IsLetterOrDigit(ch)))
+            {
+                MessageBox.Show("The field cannot contain special characters!");
+                return false;
+            }*/
+
+            return true;
+        }
+
+        internal static bool ValidateNumber(string text)
+        {
+            if (!text.ToString().All(c => char.IsDigit(c)))
+            {
+                MessageBox.Show("The field Year and Severity can only contain numbers!");
+                return false;
+            }
+
+            return true;
+        }
+
+        internal static bool ValidateLicensePlate(string text)
+        {
+            if (text.Contains('-'))
+            {
+                string[] pieces = text.Split("-");
+
+                if (pieces.Length == 2 && pieces[0].Length == 3 &&
+                    pieces[0].All(c => char.IsLetter(c)) && pieces[1].Length == 3 && pieces[1].All(c => char.IsDigit(c)))
+                {
+                    return true;
+                }
+            }
+
+            MessageBox.Show("The license plate format must be XXX-000!");
+            return false;
+        }
+
+        internal static bool ValidateSeverity(string text)
+        {
+            if (ValidateNumber(text))
+            {
+                int number = int.Parse(text);
+
+                if (number > 0 && number < 11)
+                {
+                    return true;
+                }
+            }
+
+            MessageBox.Show("The severity must be a number between 1 and 10");
+            return false;
         }
     }
 }
