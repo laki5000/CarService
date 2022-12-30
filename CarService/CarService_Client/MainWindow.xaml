@@ -23,8 +23,8 @@
             <Button Grid.Row="2" Content="Order by" Width="60" HorizontalAlignment="Right" Margin="15,0,15,15" Click="HandleOrderByButtonClicked"/>
             <Button Grid.Row="2" Content="Search by" Width="60" HorizontalAlignment="Right" Margin="15,0,15,15" Click="HandleSearchByButtonClicked"/>
             <ComboBox x:Name="ComboBoxOrderBy" Grid.Row="2" Margin="15,0,15,15">
-                <ComboBoxItem Content="Date" IsSelected="True"/>
-                <ComboBoxItem Content="Name"/>
+                <ComboBoxItem Content="Date"/>
+                <ComboBoxItem Content="Name" IsSelected="True"/>
                 <ComboBoxItem Content="Car Make"/>
                 <ComboBoxItem Content="License Plate"/>
                 <ComboBoxItem Content="Year"/>
