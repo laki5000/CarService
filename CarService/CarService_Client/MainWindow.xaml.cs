@@ -159,8 +159,6 @@ namespace CarService_Client
             }
 
             ClientListBox.ItemsSource = AllData.ToList();
-
         }
-
     }
 }
