@@ -71,19 +71,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lakat\\.nuget\\packages\\": {}
+    "C:\\Users\\University\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Suli\\Egyetem\\5.felev\\c#\\CarService\\CarService_Client\\CarService_Client.csproj",
+      "projectUniqueName": "C:\\Users\\University\\Proj\\CarService\\CarService_Client\\CarService_Client.csproj",
       "projectName": "CarService_Client",
-      "projectPath": "D:\\Suli\\Egyetem\\5.felev\\c#\\CarService\\CarService_Client\\CarService_Client.csproj",
-      "packagesPath": "C:\\Users\\lakat\\.nuget\\packages\\",
-      "outputPath": "D:\\Suli\\Egyetem\\5.felev\\c#\\CarService\\CarService_Client\\obj\\",
+      "projectPath": "C:\\Users\\University\\Proj\\CarService\\CarService_Client\\CarService_Client.csproj",
+      "packagesPath": "C:\\Users\\University\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\University\\Proj\\CarService\\CarService_Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lakat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\University\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -97,8 +97,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "D:\\Suli\\Egyetem\\5.felev\\c#\\CarService\\CarService_Common\\CarService_Common.csproj": {
-              "projectPath": "D:\\Suli\\Egyetem\\5.felev\\c#\\CarService\\CarService_Common\\CarService_Common.csproj"
+            "C:\\Users\\University\\Proj\\CarService\\CarService_Common\\CarService_Common.csproj": {
+              "projectPath": "C:\\Users\\University\\Proj\\CarService\\CarService_Common\\CarService_Common.csproj"
             }
           }
         }

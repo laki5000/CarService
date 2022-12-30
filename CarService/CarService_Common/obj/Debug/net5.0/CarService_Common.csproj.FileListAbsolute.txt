@@ -10,3 +10,15 @@ D:\Suli\Egyetem\5.felev\c#\CarService\CarService_Common\obj\Debug\net5.0\CarServ
 D:\Suli\Egyetem\5.felev\c#\CarService\CarService_Common\obj\Debug\net5.0\refint\CarService_Common.dll
 D:\Suli\Egyetem\5.felev\c#\CarService\CarService_Common\obj\Debug\net5.0\CarService_Common.pdb
 D:\Suli\Egyetem\5.felev\c#\CarService\CarService_Common\obj\Debug\net5.0\ref\CarService_Common.dll
+C:\Users\University\Proj\CarService\CarService_Common\bin\Debug\net5.0\CarService_Common.deps.json
+C:\Users\University\Proj\CarService\CarService_Common\bin\Debug\net5.0\CarService_Common.dll
+C:\Users\University\Proj\CarService\CarService_Common\bin\Debug\net5.0\CarService_Common.pdb
+C:\Users\University\Proj\CarService\CarService_Common\obj\Debug\net5.0\CarService_Common.csproj.AssemblyReference.cache
+C:\Users\University\Proj\CarService\CarService_Common\obj\Debug\net5.0\CarService_Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\University\Proj\CarService\CarService_Common\obj\Debug\net5.0\CarService_Common.AssemblyInfoInputs.cache
+C:\Users\University\Proj\CarService\CarService_Common\obj\Debug\net5.0\CarService_Common.AssemblyInfo.cs
+C:\Users\University\Proj\CarService\CarService_Common\obj\Debug\net5.0\CarService_Common.csproj.CoreCompileInputs.cache
+C:\Users\University\Proj\CarService\CarService_Common\obj\Debug\net5.0\CarService_Common.dll
+C:\Users\University\Proj\CarService\CarService_Common\obj\Debug\net5.0\refint\CarService_Common.dll
+C:\Users\University\Proj\CarService\CarService_Common\obj\Debug\net5.0\CarService_Common.pdb
+C:\Users\University\Proj\CarService\CarService_Common\obj\Debug\net5.0\ref\CarService_Common.dll

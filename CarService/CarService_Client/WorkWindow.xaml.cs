@@ -122,12 +122,11 @@ namespace CarService_Client
                 MessageBox.Show("The field cannot be whitespace!");
                 return false;
             }
-            /*
-            if (text.Split("").ToString().Any(ch => char.IsLetterOrDigit(ch)))
+            if (text.Contains("?"))
             {
                 MessageBox.Show("The field cannot contain special characters!");
                 return false;
-            }*/
+            }
 
             return true;
         }
