@@ -14,8 +14,8 @@ Látja a felvett munkákat
     Indításkor betölti a korábbi adatokat
     Adatok frissítésére alkalmas gomb
     A sorok a különböző kategóriák szerint rendezhetőek növekvő vagy csökkenő sorrend (dátum, abc)
-    Keresés lehetőség az összes attribútum alapján. Validáció is szükséges az input mezőkre.
-    Munkaóra esztimáció megjelenítése (API számolja)
+    Keresés lehetőség az összes attribútum alapján.
+    Munkaóra esztimáció megjelenítése.
     Egy kiválasztott munka adatait
         Meg tudja nézni
         Módosítani tudja
@@ -29,7 +29,7 @@ Látja a felvett munkákat
     Adatok frissítésére alkalmas gomb
     A sorok a különböző kategóriák szerint rendezhetőek növekvő vagy csökkenő sorrendben (dátum, abc)
     Keresés lehetőség az összes attribútum alapján
-    Munkaóra esztimáció megjelenítése (API számolja)
+    Munkaóra esztimáció megjelenítése
     Ki tud választani egy munkát
         Aminek az állapotát változtathatja
             Felvett munka -> Elvégzés alatt -> Befejezett
