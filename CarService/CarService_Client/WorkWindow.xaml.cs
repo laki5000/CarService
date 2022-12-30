@@ -110,7 +110,7 @@ namespace CarService_Client
             }
         }
 
-        internal static bool ValidateString(string text)
+        public static bool ValidateString(string text)
         {
             if (string.IsNullOrEmpty(text))
             {
@@ -135,7 +135,7 @@ namespace CarService_Client
             return true;
         }
 
-        internal static bool ValidateNumber(string text)
+        public static bool ValidateNumber(string text)
         {
             if (!text.ToString().All(c => char.IsDigit(c)))
             {
@@ -146,7 +146,7 @@ namespace CarService_Client
             return true;
         }
 
-        internal static bool ValidateLicensePlate(string text)
+        public static bool ValidateLicensePlate(string text)
         {
             if (text.Contains('-'))
             {
@@ -163,7 +163,7 @@ namespace CarService_Client
             return false;
         }
 
-        internal static bool ValidateSeverity(string text)
+        public static bool ValidateSeverity(string text)
         {
             if (ValidateNumber(text))
             {

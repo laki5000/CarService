@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarService_Server", "CarService_Server\CarService_Server.csproj", "{615B0106-1164-4191-B561-AF343CD0ADC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarService_Server", "CarService_Server\CarService_Server.csproj", "{615B0106-1164-4191-B561-AF343CD0ADC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarService_Mechanic", "CarService_Mechanic\CarService_Mechanic.csproj", "{D615BE52-4B10-42C3-8FC5-1491B4BE1872}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarService_Mechanic", "CarService_Mechanic\CarService_Mechanic.csproj", "{D615BE52-4B10-42C3-8FC5-1491B4BE1872}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarService_Common", "CarService_Common\CarService_Common.csproj", "{FAF61EBD-058A-4E67-A797-14C324734C61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarService_Common", "CarService_Common\CarService_Common.csproj", "{FAF61EBD-058A-4E67-A797-14C324734C61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarService_Client", "CarService_Client\CarService_Client.csproj", "{D2182A68-B7C7-44C2-9BA3-5579DE12AEA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarService_Client", "CarService_Client\CarService_Client.csproj", "{D2182A68-B7C7-44C2-9BA3-5579DE12AEA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputValidation.Tests", "InputValidation.Tests\InputValidation.Tests.csproj", "{333E4710-0DD5-48F9-868C-70B6411AA46D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D2182A68-B7C7-44C2-9BA3-5579DE12AEA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2182A68-B7C7-44C2-9BA3-5579DE12AEA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2182A68-B7C7-44C2-9BA3-5579DE12AEA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{333E4710-0DD5-48F9-868C-70B6411AA46D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{333E4710-0DD5-48F9-868C-70B6411AA46D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{333E4710-0DD5-48F9-868C-70B6411AA46D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{333E4710-0DD5-48F9-868C-70B6411AA46D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
