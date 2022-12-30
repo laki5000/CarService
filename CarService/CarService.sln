@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarService_Client", "CarSer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputValidation.Tests", "InputValidation.Tests\InputValidation.Tests.csproj", "{333E4710-0DD5-48F9-868C-70B6411AA46D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estimation_Tests", "Estimation_Tests\Estimation_Tests.csproj", "{BF8730B3-A22F-462D-A646-ADF429E58C2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{333E4710-0DD5-48F9-868C-70B6411AA46D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{333E4710-0DD5-48F9-868C-70B6411AA46D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{333E4710-0DD5-48F9-868C-70B6411AA46D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF8730B3-A22F-462D-A646-ADF429E58C2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF8730B3-A22F-462D-A646-ADF429E58C2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF8730B3-A22F-462D-A646-ADF429E58C2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF8730B3-A22F-462D-A646-ADF429E58C2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
