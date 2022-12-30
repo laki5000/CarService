@@ -22,7 +22,7 @@ namespace CarService_Common.Models
         public double WorkHourEstimation { get; set; }
         public override string ToString()
         {
-            return $"{Name} - {Type} - {PlateNumber} - {ManufactureYear} - {WorkCategory} - {Description} - {Seriousness} - {Status} - {WorkHourEstimation}";
+            return $"{Name} - {Type} - {PlateNumber} - {ManufactureYear} - {WorkCategory} - {Description} - {Seriousness} - {Status} - ETA: {WorkHourEstimation}";
         }
 
 

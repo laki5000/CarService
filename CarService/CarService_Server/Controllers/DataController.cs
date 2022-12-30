@@ -37,6 +37,7 @@ namespace CarService_Server.Controllers
         {
             var datas = DataRepository.GetData().ToList();
 
+            data.WorkHourEstimation = DataRepository.CalculateETA(data);
             data.Id = GetNewId(datas);
             datas.Add(data);
 
@@ -59,6 +60,8 @@ namespace CarService_Server.Controllers
                 dataToUpdate.WorkCategory = data.WorkCategory;
                 dataToUpdate.Description = data.Description;
                 dataToUpdate.Seriousness = data.Seriousness;
+                dataToUpdate.WorkHourEstimation = DataRepository.CalculateETA(data);
+                dataToUpdate.Status = data.Status;
 
                 DataRepository.StoreData(datas);
                 return Ok();

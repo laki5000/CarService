@@ -1,5 +1,6 @@
 ﻿using CarService_Common.Models;
 using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
@@ -34,7 +35,7 @@ namespace CarService_Server.Repositories
             //vissza adja a mostani időt
             int CarAge = DateAndTime.Now.Year - data.ManufactureYear;
 
-            double[] Severity = { 0.2, 0.2, 0.4, 0.4, 0.6, 0.6, 0.8, 0.8, 1, 1 };
+            double[] Severity = {1, 0.2, 0.2, 0.4, 0.4, 0.6, 0.6, 0.8, 0.8, 1, 1 };
 
             switch (data.WorkCategory)
             {
@@ -67,7 +68,7 @@ namespace CarService_Server.Repositories
 
             ETA *= Severity[data.Seriousness];
 
-            return ETA;
+            return Math.Round(ETA,2);
 
         }
     }
