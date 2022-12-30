@@ -60,7 +60,10 @@ namespace CarService_Client
                 {
                     if (ValidateLicensePlate(TextBoxLicensePlate.Text) && ValidateSeverity(TextBoxSeverity.Text))
                     {
-                        return true;
+                        if (ValidateShortDescription(TextBoxShortDescription.Text))
+                        {
+                            return true;
+                        }
                     }
                 }
             }
@@ -165,7 +168,7 @@ namespace CarService_Client
 
         public static bool ValidateSeverity(string text)
         {
-            if (ValidateNumber(text))
+            if (text.Length > 0 && ValidateNumber(text))
             {
                 int number = int.Parse(text);
 
@@ -177,6 +180,17 @@ namespace CarService_Client
 
             MessageBox.Show("The severity must be a number between 1 and 10");
             return false;
+        }
+
+        public static bool ValidateShortDescription(string text)
+        {
+            if (text.Length < 1)
+            {
+                MessageBox.Show("The short description field cannot be empty!");
+                return false;
+            }
+
+            return true;
         }
     }
 }

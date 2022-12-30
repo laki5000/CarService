@@ -4,26 +4,26 @@ using CarService_Client;
 namespace InputValidation.Tests
 {
     [TestClass]
-    public class Year_Tests
+    public class Description_Tests
     {
         [TestMethod]
-        public void ValidateYear_WithValidArgument()
+        public void ValidateDescription_WithValidArgument()
         {
-            string year = "2012";
+            string desc = "Engine spark plug change";
             bool expectedResult = true;
 
-            bool actualResult = WorkWindow.ValidateNumber(year);
+            bool actualResult = WorkWindow.ValidateShortDescription(desc);
 
             Assert.AreEqual(expectedResult, actualResult);
         }
 
         [TestMethod]
-        public void ValidateYear_WithLetterInText_ThrowsExcepion()
+        public void ValidateDescription_WithEmptyString_ThrowsExcepion()
         {
-            string year = "2003A";
+            string desc = "";
             bool expectedResult = false;
 
-            bool actualResult = WorkWindow.ValidateNumber(year);
+            bool actualResult = WorkWindow.ValidateShortDescription(desc);
 
             Assert.AreEqual(expectedResult, actualResult);
         }
